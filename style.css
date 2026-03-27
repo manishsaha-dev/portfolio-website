@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Profile */
+.profile-card {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    color: white;
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    color: white;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+/* Hover animation */
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #00c6ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0072ff;
+}
+
+/* Fade animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+.fade-in:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.fade-in:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.fade-in:nth-child(4) {
+    animation-delay: 0.9s;
+}
+.fade-in:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 10px;
+    color: #00c6ff;
+}
+
+/* List */
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 5px 0;
+}
+
+.contact {
+    text-align: center;
+}
